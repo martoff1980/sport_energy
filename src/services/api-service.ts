@@ -1,4 +1,4 @@
-import { FilterResponse } from "../model/filter-response";
+import { FilterResponse } from "../models/filter-response";
 import { ApiConfig } from "./api-config";
 
 export class FilterService {
