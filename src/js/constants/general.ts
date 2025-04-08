@@ -1,0 +1,1 @@
+export const YOUR_ENERGY_API_URL = 'https://your-energy.b.goit.study/api/';
