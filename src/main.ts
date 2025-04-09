@@ -1,11 +1,12 @@
-setTimeout(async () => {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-        if (!response.ok) throw new Error('Fetch failed');
+import { FilterService } from "./services/filter-service";
 
-        const data = await response.json();
-        console.log('Дані з API:', data);
-    } catch (err) {
-        console.error('Помилка при fetch:', err);
-    }
-}, 2000);
+const service = new FilterService();
+
+service.getFilters('Muscles', 1, 12)
+  .then(fr => {
+    console.log('Filters:', fr);
+    fr.results.forEach(f => console.log(f.name, f.imgUrl));
+  })
+  .catch(err => {
+    console.error('Error loading filters:', err);
+  });

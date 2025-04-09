@@ -1,0 +1,135 @@
+/* Tabs */
+.filter-tabs {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .filter-tabs li {
+    cursor: pointer;
+    padding: 12px 0;
+    font-weight: 600;
+    color: #777;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .filter-tabs li:hover {
+    color: #1296f0;
+  }
+  
+  .filter-tabs li.active {
+    color: #000;
+  }
+  
+  .filter-tabs li.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #1296f0;
+  }
+  
+  /* Cards grid */
+  .filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 24px 0;
+  }
+  
+  .filter-card {
+    flex: 0 1 calc(25% - 16px);
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  
+  .filter-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .filter-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .filter-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+  }
+  
+  .filter-name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .filter-type {
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  
+  .pagination-page {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #333;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-page:hover {
+    background-color: #e6f2ff;
+  }
+  
+  .pagination-page.active {
+    background-color: #1296f0;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .filter-card {
+      flex: 0 1 100%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .filter-card {
+      flex: 0 1 calc(33.333% - 16px);
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .filter-card {
+      flex: 0 1 calc(25% - 16px);
+    }
+  }
+  
