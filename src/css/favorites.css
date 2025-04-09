@@ -1,0 +1,119 @@
+:root {
+  /* Indents */
+  --indent-1: 4px;
+  --indent-2: 8px;
+  --indent-3: 12px;
+  --indent-4: 16px;
+  --indent-5: 20px;
+  --indent-6: 24px;
+  --indent-7: 28px;
+  --indent-8: 32px;
+  --indent-9: 36px;
+  --indent-10: 40px;
+  --indent-11: 44px;
+  --indent-12: 48px;
+  --indent-13: 52px;
+  --indent-14: 56px;
+  --indent-15: 60px;
+  --indent-16: 64px;
+  --indent-17: 68px;
+  --indent-18: 72px;
+  --indent-19: 76px;
+  --indent-20: 80px;
+  --border-radius-xs: 2px;
+  --border-radius-s: 10px;
+  --border-radius-m: 12px;
+  --border-radius-l: 15px;
+  --border-radius-xl: 20px;
+  --border-radius-2xl: 30px;
+  --border-radius-3xl: 60px;
+  --border-radius-full: 99999px;
+
+  /* Colors */
+  --color-dark-gray: #242424;
+  --color-dark-gray-10: #2424241a;
+  --color-dark-gray-50: #24242480;
+  --color-dark-gray-60: #24242499;
+  --color-dark-gray-80: #242424cc;
+  --color-light-gray: #f4f4f4;
+  --color-light-gray-20: #f4f4f433;
+  --color-light-gray-60: #f4f4f499;
+  --color-light-gray-secondary: #d4d4d4;
+  --color-black-20: #04040433;
+  --color-white: #ffffff;
+  --color-accent-yellow: #eea10c;
+
+  /* Font */
+  --font-family-primary: 'DM Sans';
+
+  /* Font weights */
+  --font-wegihth-regular: 400;
+  --font-wegihth-medium: 500;
+  --font-wegihth-bold: 700;
+
+  /* Font sizes */
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 38px;
+  --font-size-3xl: 44px;
+  --font-size-4xl: 56px;
+  --font-size-5xl: 74px;
+
+  /* Line Heights */
+  --line-height-xs: 1;
+  --line-height-s: 1.07142857143;
+  --line-height-m: 1.09090909091;
+  --line-height-l: 1.28571428571;
+  --line-height-xl: 1.33333333333;
+  --line-height-2xl: 1.5;
+}
+
+body {
+  font-family: var(--font-family-primary), sans-serif;
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-l);
+  color: var(--color-dark-gray);
+  letter-spacing: 0;
+  font-weight: var(--font-wegihth-regular);
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-light-gray);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-xs);
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-m);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+
+main {
+  flex-grow: 1;
+}
+
+p {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-l);
+}
